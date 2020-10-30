@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绅芽工作室</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- 页面主菜单 -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#home" class="main-link">Home</a></li>
+            <li><a href="#about" class="main-link">About</a></li>
+            <li><a href="#service" class="main-link">Service</a></li>
+            <li><a href="#portfolio" class="main-link">Portfolio</a></li> 
+        </ul>
+    </nav>
+    <!-- Home栏目 -->
+    <section id="home">
+        <h1>STOP Design</h1>
+        <h2>Time erodes all such beauty, but what it cannot diminish… is the wonderful workings of your mind. Your humor, your kindness… and your moral courage.</h2>
+    </section>
+    <!-- about栏目 -->
+    <section id="about">
+        <h1>About</h1>
+        <p>You got a dream,you gotta protect it.People can’t do something themselves,they wanna tell you you can’t do it.If you want something,go get it.</p>
+    </section>
+    <!-- server栏目 -->
+    <section id="service">
+        <h1>Service</h1>
+        <p>old life blown away in the blink of an eye ，nothing left but all the time in the world to think about it.</p>
+    </section>
+    <!-- portfolio栏目 -->
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <ul>
+            <li><a href="#work1" class="portfolio-link">work1</a></li>
+            <li><a href="#work2" class="portfolio-link">work2</a></li>
+            <li><a href="#work3" class="portfolio-link">work3</a></li>
+            <li><a href="#work4" class="portfolio-link">work4</a></li>
+            <li><a href="#work5" class="portfolio-link">work5</a></li>
+        </ul>
+        <article id="work1">
+            <img src="../images/web1.png" alt="">
+            <h2>前端work1</h2>
+            <p>处理静态页面和动态页面</p>
+        </article>
+        <article id="work2">
+            <img src="../images/web2.png" alt="">
+            <h2>后端work2</h2>
+            <p>接收静态页面和动态页面</p>
+        </article>
+        <article id="work3">
+            <img src="../images/web3.png" alt="">
+            <h2>全栈work3</h2>
+            <p>发布静态页面和动态页面</p>
+        </article>
+        <article id="work4">
+            <img src="../images/web4.png" alt="">
+            <h2>分布式work4</h2>
+            <p>分散处理静态页面和动态页面</p>
+        </article>
+        <article id="work5">
+            <img src="../images/web5.png" alt="">
+            <h2>后期维护work5</h2>
+            <p>处理静态页面和动态页面更新</p>
+        </article>
+        <!-- portfolio弹出图层 -->
+        <div id="popup">
+            <div id="popup-content">
+                <button id="close">Close me</button>
+                <div id="popup-holder"></div>
+            </div>
+            <div id="popup-bg"></div>
+        </div>
+    </section>
+    <div id="iealert" style="width: 100%;background: #D35400;text-align: center;line-height: 2.5;color: #fff;clear: both;position: fixed;top: 0;left: 0;z-index: 9999;display: none;">版本较低，请更新浏览器</div>
+</body>
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/TweenMax.min.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    if(!window.localStorage){
+        document.getElementById("iealert").style.display = "block";
+    }
+</script>
+</html>
